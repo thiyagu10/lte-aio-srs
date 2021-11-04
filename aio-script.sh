@@ -1,7 +1,7 @@
 sudo apt-get install libzmq3-dev
 sudo apt-get install cmake libfftw3-dev libmbedtls-dev libboost-program-options-dev libconfig++-dev libsctp-dev
 sudo apt-get install build-essential
-git clone https://github.com/srsLTE/srsLTE.git
+git clone https://github.com/srsRAN/srsRAN.git
 cd srsLTE
 mkdir build
 cd build
