@@ -1,0 +1,9 @@
+[Unit]
+Description = SRS LTE UE RF Over ZMQ
+After = network.target
+
+[Service]
+ExecStart=/bin/sh /opt/srsconf/srsue.sh
+
+[Install]
+WantedBy = multi-user.target
