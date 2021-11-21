@@ -1,0 +1,9 @@
+[Unit]
+Description = SRS LTE EPC
+After = network.target
+
+[Service]
+ExecStart=srsepc
+
+[Install]
+WantedBy = multi-user.target
