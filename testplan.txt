@@ -1,10 +1,10 @@
 ### Reachability
 ### PGW-SGi & INTERNET
-ip netns exec ue1 ping 172.16.0.2 dev tun_srsue -c 5 
+ip netns exec ue1 ping 172.16.0.1 dev tun_srsue -c 5             < PGW-SGi IP - 172.16.0.1 >
 ip netns exec ue1 ping 8.8.8.8 dev tun_srsue -c 5 
 ip netns exec ue1 ping dns9.quad9.net dev tun_srsue -c 5 
 
 
 ### THROUGHPUT 
 iperf3 -s -p 5000 --bind 172.16.0.1
-ip netns exec ue1 iperf3 -c 172.16.0.1 -p 5000 -n 2.85M    <n- can be any size of data to be sent over 4G LTE Access>
+ip netns exec ue1 iperf3 -c 172.16.0.1 -p 5000 -n 2.85M          <n- can be any size of data to be sent over 4G LTE Access>
